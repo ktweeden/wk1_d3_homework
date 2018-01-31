@@ -62,6 +62,13 @@ p users["Erik"][:home_town]
 p users["Erik"][:lottery_numbers]
 # Get the type of Avril's pet Monty
 p users["Avril"][:pets][0][:species]
+
+# or - to find if you dont know the index of the pet
+for pet in users["Avril"][:pets]
+  if pet[:name] == "Monty"
+    p pet[:species]
+  end
+end
 # Get the smallest of Erik's lottery numbers
 p users["Erik"][:lottery_numbers].min
 # Return an array of Avril's lottery numbers that are even
