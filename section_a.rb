@@ -21,7 +21,7 @@ p stops.delete_at(2)
 # How many stops there are in the array?
 p stops.length()
 
-p "How many ways can we return Falkirk High from the array?"
+# How many ways can we return Falkirk High from the array?
 p stops.at(2)
 p stops.fetch(2)
 p stops[2]

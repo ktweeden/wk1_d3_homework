@@ -75,11 +75,13 @@ p users["Erik"][:lottery_numbers].min
 p users["Avril"][:lottery_numbers].select {|n| n%2 == 0}
 # Erik is one lottery number short! Add the number 7 to be included in his lottery numbers
 p users["Erik"][:lottery_numbers].push(7)
+users["Erik"][:lottery_numbers] << 7
+
 # Change Erik's hometown to Edinburgh
 users["Erik"][:home_town] = "Edinburgh"
 # Add a pet dog to Erik called "Fluffy"
-users["Erik"][:pets].push({name: "Fluffy"})
+users["Erik"][:pets].push({name: "Fluffy", species: "dog"})
 p users["Erik"][:pets]
 # Add another person to the users hash
 users["Kate"] = {}
-p users["Kate"]
+p users
